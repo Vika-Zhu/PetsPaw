@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Gallery_ Bootcamp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <div class="home__row">
+                <div class="home__content home__content-left">
+                    <div class="logo">
+                        <a href="">
+                            <img src="img/Logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="greeting">
+                        <h2 class="greeting__title">Hi!👋</h2>
+                        <p class="greeting__text">Welcome to MacPaw Bootcamp 2023</p>
+                    </div>
+                    <div class="block__start start">
+                        <div class="start__text">Lets start using The Cat API</div>
+                        <div class="start__items">
+                            <div class="start__item item-start_1">
+                                <div class="item__img">
+                                    <img src="img/home/vote-table.png" alt="">
+                                </div>
+                                <div class="start__btn">
+                                    <a class="btn" href="">VOTING</a>
+                                </div>
+                            </div>
+                            <div class="start__item item-start_2">
+                                <div class="item__img">
+                                    <img src="img/home/pet-breeds.png" alt="">
+                                </div>
+                                <div class="start__btn">
+                                    <a class="btn" href="">BREEDS</a>
+                                </div>
+                            </div>
+                            <div class="start__item item-start_3">
+                                <div class="item__img">
+                                    <img src="img/home/images-search.png" alt="">
+                                </div>
+                                <div class="start__btn">
+                                    <a class="btn" href="">GALLERY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-header header">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header_search">
+                            <form  class="search-form" action="">
+                                <input class="search-input"  type="text" placeholder="Search for breeds by name">
+                                <button class="search-btn"></button>
+                            </form>
+                        </div>
+                        <div class="header_links">
+                            <a class="link link-likes svg" href=""></a>
+                            <a class="link link-favourites svg" href=""></a>
+                            <a class="link link-dislikes svg" href=""></a>
+                        </div>
+                    </div>
+                    <div class="section-main gallery">
+                        <div class="nav">
+                            <a class="nav__btn nav__btn-back svg" href=""></a>
+                            <div class="nav__badge">GALLERY</div>
+                            <div class="nav__btn nav__btn--upload ">UPLOAD</div>
+                        </div>
+                        <div class="filter-panel">
+                            <div class="filter-panel_top">
+                                <div class="filter-section">
+                                    <label class="filter-label" for="">ORDER</label>
+                                    <div class="filter_section-option">Random</div>
+                                    <ul class="nav__list-dropdown filter_list-dropdown">
+                                        <li data-value="random">Random</li>
+                                        <li data-value="desc">Desc</li>
+                                        <li data-value="asc">Asc</li>
+                                    </ul>
+                                </div>
+                                <div class="filter-section">
+                                    <label class="filter-label" for="">TYPE</label>
+                                    <div class="filter_section-option">Static</div>
+                                    <ul class="nav__list-dropdown filter_list-dropdown ">
+                                        <li data-value="all">All</li>
+                                        <li data-value="static">Static</li>
+                                        <li data-value="animated">Animated</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-panel_bottom">
+                                <div class="filter-section filter-section-breed">
+                                    <label class="filter-label" for="">BREED</label>
+                                    <input class="filter_section-option breed-select" type="text" placeholder="None">
+                                    <div class="nav__list-wrapper">
+                                        <ul class="nav__list-dropdown filter_list-dropdown">
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">Abyssinian</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">Aegean</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">American Bobtail</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">American Curl</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">American Shorthair</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">American Wirehair</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link" href="">...</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-section">
+                                    <label class="filter-label" for="">LIMIT</label>
+                                    <div class="filter_section-option">5 items per page</div>
+                                    <ul class="nav__list-dropdown filter_list-dropdown">
+                                        <li data-value="5 items per page">5 items per page</li>
+                                        <li data-value="10 items per page">10 items per page</li>
+                                        <li data-value="15 items per page">15 items per page</li>
+                                        <li data-value="20 items per page">20 items per page</li>
+                                    </ul>
+                                </div>
+                                <button class="filter-btn filter-section"></button>
+                            </div>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery__items">
+                                <div class="gallery__item item__long">
+                                    <img src="img/Cat_gallery/1_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-long svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/2_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/3_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/4_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item item__big">
+                                    <img src="img/Cat_gallery/5_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-big svg"></button>
+                                </div>
+                            </div>
+                            <div class="gallery__items">
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/6_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/7_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item item__long-reverse">
+                                    <img src="img/Cat_gallery/8_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-long svg"></button>
+                                </div>
+                                <div class="gallery__item item__big-reverse">
+                                    <img src="img/Cat_gallery/9_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-big svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/10_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                            </div>
+                            <div class="gallery__items">
+                                <div class="gallery__item item__long">
+                                    <img src="img/Cat_gallery/1_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-long svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/2_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/3_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/4_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item item__big">
+                                    <img src="img/Cat_gallery/5_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-big svg"></button>
+                                </div>
+                            </div>
+                            <div class="gallery__items">
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/6_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/7_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                                <div class="gallery__item item__long-reverse">
+                                    <img src="img/Cat_gallery/8_cat_big.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-long svg"></button>
+                                </div>
+                                <div class="gallery__item item__big-reverse">
+                                    <img src="img/Cat_gallery/9_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like gallery_btn-like-big svg"></button>
+                                </div>
+                                <div class="gallery__item">
+                                    <img src="img/Cat_gallery/10_cat.jpeg" alt="">
+                                    <button class="gallery_btn-like svg"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                <button class="modal__close svg"></button>
+                <h2 class="modal__title">Upload a .jpg or .png Cat Image</h2>
+                <p class="modal__text">Any uploads must comply with the <span class="red-text">upload guidelines</span> or face deletion.</p>
+                <div class="modal__upload-window upload__window">
+                    <p class="upload__window-instruction"><span class="bold-text">Drag here</span> your file or <span class="bold-text">Click here </span>to upload</p>
+                </div>
+                <p class="modal__text">No file selected</p>
+                <button class="upload__btn btn">UPLOAD PHOTO</button>
+                <div class="upload__status upload__status-success">Thanks for the Upload - Cat found!</div>
+                <div class="upload__status upload__status-error">No Cat found - try a different one</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-home">
+        <div class="modal-home__container">
+            <div class="modal-home__content">
+                <button class="modal__close modal-home__close svg"></button>
+                <div class="block__start start">
+                    <div class="start__items">
+                        <div class="start__item item-start_1">
+                            <div class="item__img">
+                                <img src="img/home/vote-table.png" alt="">
+                            </div>
+                            <div class="start__btn">
+                                <a class="btn" href="">VOTING</a>
+                            </div>
+                        </div>
+                        <div class="start__item item-start_2">
+                            <div class="item__img">
+                                <img src="img/home/pet-breeds.png" alt="">
+                            </div>
+                            <div class="start__btn">
+                                <a class="btn" href="">BREEDS</a>
+                            </div>
+                        </div>
+                        <div class="start__item item-start_3">
+                            <div class="item__img">
+                                <img src="img/home/images-search.png" alt="">
+                            </div>
+                            <div class="start__btn">
+                                <a class="btn" href="">GALLERY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
